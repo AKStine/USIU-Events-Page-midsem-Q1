@@ -1,0 +1,144 @@
+<!-- events.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USIU–Africa Events</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="events.css">
+  <!-- Using Google Fonts for USIU–Africa style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <nav class="navbar">
+    <div class="logo-title">
+      <!-- Placeholder logo -->
+      <img src="https://via.placeholder.com/50x50?text=Logo" alt="USIU–Africa Logo" class="logo">
+      <span class="site-title">USIU–Africa Events</span>
+    </div>
+    <ul class="nav-links">
+      <!-- These links scroll to sections below -->
+      <li><a href="#upcoming">Upcoming</a></li>
+      <li><a href="#past">Past Events</a></li>
+      <li><a href="#submit">Submit Your Event</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Upcoming Events Section -->
+    <section id="upcoming" class="events-section">
+      <h2>Upcoming Events</h2>
+      <!-- Pagination anchor for first page -->
+      <a id="page1"></a>
+      <div class="events-grid">
+        <!-- Event Card 1: Academic -->
+        <article class="event-card academic">
+          <h3>Peer Counselling Week</h3>
+          <p class="date">July 5–9, 2025</p>
+          <p>Workshops, group sessions, and guest speakers to promote student wellness and mental health.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+        <!-- Event Card 2: Culture -->
+        <article class="event-card culture">
+          <h3>Culture Week</h3>
+          <p class="date">July 12–16, 2025</p>
+          <p>Celebrate the diversity of USIU–Africa with music, food, and performances from around the world.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+        <!-- Event Card 3: Sports -->
+        <article class="event-card sports">
+          <h3>Sports Week</h3>
+          <p class="date">July 20–25, 2025</p>
+          <p>Join in on inter-university tournaments, fun runs, and fitness challenges for all students.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+      </div>
+      <!-- Pagination: Next Button -->
+      <div class="pagination">
+        <a href="#page2" class="next-btn">Next</a>
+      </div>
+    </section>
+
+    <!-- Most Recent Events Section (hidden by default, shown on #page2) -->
+    <section id="recent" class="events-section">
+      <!-- Pagination anchor for second page -->
+      <a id="page2"></a>
+      <div class="events-grid paginated">
+        <!-- Event Card 4: Leadership -->
+        <article class="event-card leadership">
+          <h3>Leadership Workshop</h3>
+          <p class="date">June 28, 2025</p>
+          <p>Hone your leadership skills with interactive sessions led by industry experts.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+        <!-- Event Card 5: Tech -->
+        <article class="event-card tech">
+          <h3>Tech Innovation Day</h3>
+          <p class="date">June 22, 2025</p>
+          <p>Showcase your projects and learn from leading tech innovators in Kenya.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+        <!-- Event Card 6: Gala -->
+        <article class="event-card gala">
+          <h3>Annual Gala Awards</h3>
+          <p class="date">June 15, 2025</p>
+          <p>A night to recognize outstanding student achievements across all faculties.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+      </div>
+      <div class="pagination">
+        <a href="#page1" class="prev-btn">Previous</a>
+        <a href="#page3" class="next-btn">Next</a>
+      </div>
+    </section>
+
+    <!-- Past Events Section (hide by default, to be shown on #page3) -->
+    <section id="past" class="events-section">
+      <a id="page3"></a>
+      <div class="events-grid paginated">
+        <!-- Event Card 7: Alumni -->
+        <article class="event-card alumni">
+          <h3>Alumni Homecoming</h3>
+          <p class="date">May 30, 2025</p>
+          <p>Reconnect with fellow alumni, faculty, and students at our annual reunion.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+        <!-- Event Card 8: Career -->
+        <article class="event-card career">
+          <h3>Career Fair</h3>
+          <p class="date">May 15, 2025</p>
+          <p>Meet top employers and explore internship and job opportunities.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+        <!-- Event Card 9: Volunteer -->
+        <article class="event-card volunteer">
+          <h3>Community Volunteer Day</h3>
+          <p class="date">April 25, 2025</p>
+          <p>Give back to the community through various service projects and outreach programs.</p>
+          <a href="#" class="read-more">Read More</a>
+        </article>
+      </div>
+      <div class="pagination">
+        <a href="#page2" class="prev-btn">Previous</a>
+      </div>
+    </section>
+
+    <!-- Submit Your Event Section -->
+    <section id="submit" class="submit-section">
+      <h2>Submit Your Event</h2>
+      <form>
+        <label for="event-title">Event Title:</label>
+        <input type="text" id="event-title" name="event-title" required>
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required>
+        <label for="event-desc">Description:</label>
+        <textarea id="event-desc" name="event-desc" required></textarea>
+        <button type="submit">Submit Event</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
